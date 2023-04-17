@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://bf1yoq5e70xpb"]
+
+[ext_resource type="Script" path="res://scripts/camera.gd" id="1_586gb"]
+[ext_resource type="Script" path="res://scripts/world/world_node.gd" id="1_tvufn"]
+[ext_resource type="PackedScene" uid="uid://c6xriwyw8vfqf" path="res://actors/ground.tscn" id="2_yyytw"]
+[ext_resource type="PackedScene" uid="uid://bbwbdqyu2nr3n" path="res://actors/water.tscn" id="3_4jluw"]
+
+[node name="main" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.573576, 0.819152, 0, -0.819152, 0.573576, 0, 2.5, 0)
+fov = 90.0
+script = ExtResource("1_586gb")
+speed = 5
+
+[node name="world_node" type="Node3D" parent="."]
+script = ExtResource("1_tvufn")
+size_x = 20
+size_y = 20
+seed = 2801
+ground_tile = ExtResource("2_yyytw")
+water_tile = ExtResource("3_4jluw")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.727533, 0.686072, 0, -0.686072, 0.727533, 0, 2.56467, 0)

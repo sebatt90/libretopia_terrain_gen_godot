@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6xriwyw8vfqf"]
+
+[ext_resource type="Material" uid="uid://7cxkbahuhy0x" path="res://materials/ground.tres" id="1_6hjvy"]
+
+[node name="ground" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+material_override = ExtResource("1_6hjvy")
+material_overlay = ExtResource("1_6hjvy")

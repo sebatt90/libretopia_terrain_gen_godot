@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpugji5s61b80"]
+
+[ext_resource type="PackedScene" uid="uid://bf4glv4a4ddm3" path="res://models/house.dae" id="1_xaf2g"]
+
+[node name="house" type="Node3D"]
+
+[node name="house" parent="." instance=ExtResource("1_xaf2g")]
+transform = Transform3D(-1.09278e-08, 0, -0.25, 0, 0.25, 0, 0.25, 0, -1.09278e-08, 0, 0, 0)

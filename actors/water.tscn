@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbwbdqyu2nr3n"]
+
+[ext_resource type="Material" uid="uid://ody6nrj7ma72" path="res://materials/water.tres" id="1_g5vyt"]
+
+[node name="water" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.314432, 0)
+material_override = ExtResource("1_g5vyt")
+size = Vector3(1, 0.152747, 1)
